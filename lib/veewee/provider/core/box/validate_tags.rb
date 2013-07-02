@@ -104,13 +104,13 @@ module Veewee
             :sudo => true
           },
           { :description => 'Checking ruby',
-            :tags => [ 'virtualbox','kvm', 'parallels','ruby'],
+            :tags => [ 'ruby'],
             :command => '. /etc/profile ;ruby --version 2> /dev/null 1> /dev/null;  echo $?',
             :expected_string => "0",
             :sudo => false
           },
           { :description => 'Checking gem',
-            :tags => [ 'virtualbox','kvm', 'parallels','gem'],
+            :tags => [ 'gem'],
             :command => '. /etc/profile ;gem --version 2> /dev/null 1> /dev/null;  echo $?',
             :expected_string => "0",
             :sudo => false

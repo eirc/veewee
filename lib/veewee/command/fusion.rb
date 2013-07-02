@@ -21,7 +21,7 @@ module Veewee
       end
 
       desc "validate [BOX_NAME]", "Validates a box against vmfusion compliancy rules"
-      method_option :tags, :type => :array , :default => %w{vmfusion puppet chef}, :aliases => "-t", :desc => "tags to validate"
+      method_option :tags, :type => :array , :default => %w{vmfusion}, :aliases => "-t", :desc => "tags to validate"
       def validate(box_name)
         env.get_box(box_name).validate_vmfusion(options)
       end

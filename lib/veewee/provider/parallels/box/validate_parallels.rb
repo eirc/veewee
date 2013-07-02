@@ -4,7 +4,7 @@ module Veewee
       module BoxCommand
 
         def validate_parallels(options)
-          validate_tags([ 'parallels','puppet','chef'],options)
+          validate_tags([ 'parallels' ],options)
         end
       end #Module
 

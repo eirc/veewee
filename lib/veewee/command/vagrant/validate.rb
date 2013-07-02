@@ -6,7 +6,7 @@ module Veewee
       class Validate < ::Vagrant::Command::Base
         def execute
           options = {
-            'tags' => %w{vagrant puppet chef virtualbox}
+            'tags' => %w{vagrant virtualbox}
           }
 
           opts = OptionParser.new do |opts|
@@ -18,7 +18,7 @@ module Veewee
               options['debug'] = d
             end
 
-            opts.on("-t", "--tags vagrant,puppet,chef", Array, "tags to validate") do |t|
+            opts.on("-t", "--tags vagrant", Array, "tags to validate") do |t|
               options['tags'] = t
             end
 

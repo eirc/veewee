@@ -5,7 +5,7 @@ module Veewee
 
         def validate_kvm(options)
 
-          validate_tags( [ 'kvm', 'puppet', 'chef'],options)
+          validate_tags( [ 'kvm' ],options)
 
         end
       end #Module

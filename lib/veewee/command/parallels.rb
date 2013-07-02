@@ -18,7 +18,7 @@ module Veewee
       end
 
       desc "validate [BOX_NAME]", "Validates a box against parallels compliancy rules"
-      method_option :tags,:type => :array, :default => %w{parallels puppet chef}, :aliases => "-t", :desc => "tags to validate"
+      method_option :tags,:type => :array, :default => %w{parallels}, :aliases => "-t", :desc => "tags to validate"
       def validate(box_name)
         env.get_box(box_name).validate_parallels(options)
       end
