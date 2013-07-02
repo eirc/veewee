@@ -8,7 +8,7 @@ Vagrant support.
 
 Current available "clean" VMs:
 
-* templates/Debian-7.1.0-amd64-netboot-clean/
+* (templates/Debian-7.1.0-amd64-netboot-clean)
 
 # Simple instructions
 
