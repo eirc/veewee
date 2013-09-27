@@ -1,5 +1,8 @@
 # Set up Vagrant.
 
+# Set up sudo
+echo 'vagrant ALL=NOPASSWD:ALL' > /etc/sudoers.d/vagrant
+
 date > /etc/vagrant_box_build_time
 
 # Create the user vagrant with password vagrant
