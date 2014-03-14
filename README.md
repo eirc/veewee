@@ -12,7 +12,7 @@ Current available "clean" VMs:
 
 # Simple instructions
 
-Check https://coderwall.com/p/dae11g
+Check [https://coderwall.com/p/dae11g](https://coderwall.com/p/dae11g)
 
 # Official Veewee
 
