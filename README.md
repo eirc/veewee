@@ -13,7 +13,12 @@ Current available "clean" VMs:
 
 # Simple instructions
 
-Check [https://coderwall.com/p/dae11g](https://coderwall.com/p/dae11g)
+    bundle exec veewee vbox define '<box_name>' '<template_name>' # copies the template to a new box definition
+    bundle exec veewee vbox build '<box_name>'                    # follows the installation process
+    bundle exec veewee vbox validate '<box_name>'                 # runs veewee's tests
+    bundle exec veewee vbox export '<box_name>'                   # exports vagrant basebox
+
+Inspired from: [https://coderwall.com/p/dae11g](https://coderwall.com/p/dae11g) and [doc/basics.md](doc/basics.md).
 
 # Official Veewee
 
